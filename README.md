@@ -5,20 +5,42 @@
 [![License](https://img.shields.io/cocoapods/l/AMRequestAPI.svg?style=flat)](http://cocoapods.org/pods/AMRequestAPI)
 [![Platform](https://img.shields.io/cocoapods/p/AMRequestAPI.svg?style=flat)](http://cocoapods.org/pods/AMRequestAPI)
 
-## Example
+## 简介
+基于 Alamofire、PromiseKit、SwiftyJSON 封装的基本post请求、上传库
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
-## Installation
-
-AMRequestAPI is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+## 安装
 
 ```ruby
-pod "AMRequestAPI"
+pod "AMRequestAPI",:git => 'https://github.com/kumaw/AMRequestAPI.git'
 ```
+## 使用
+###AMRequestAPI对象
+####post方法，返回一个Promise<JSON>对象
+url: String请求地址  
+body: Dictionary 请求参数 ,value可包含AMUploadFile对象
+
+```swift
+AMRequestAPI.share.post(url:String,body:Dictionary<String, Any>?)->Promise<JSON>
+```
+####defaultParams属性
+每次请求默认的参数
+
+```swift
+AMRequestAPI.share.defaultParams = [:]
+```
+
+###AMUploadFile对象
+
+withjpg:image的data  
+name:参数名
+
+```swift
+AMUploadFile(withjpg: Data, name: String)
+```
+###AMError对象
+catch捕获的错误，自定义错误时需要继承AMError
+
 
 ## Author
 

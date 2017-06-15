@@ -20,7 +20,7 @@ public class AMRequestAPI: NSObject {
     public static let share = AMRequestAPI()
     private override init() {}
     //默认参数
-    let defaultParams:[String:Any] = [:]
+    public let defaultParams:[String:Any] = [:]
 
     
     func addDefaultParams(params: [String:Any]?) -> Dictionary<String,Any>?{
