@@ -15,22 +15,22 @@
 pod "AMRequestAPI",:git => 'https://github.com/kumaw/AMRequestAPI.git'
 ```
 ## 使用
-###AMRequestAPI对象
-####post方法，返回一个Promise<JSON>对象
+### AMRequestAPI对象
+#### post方法，返回一个Promise<JSON>对象
 url: String请求地址  
 body: Dictionary 请求参数 ,value可包含AMUploadFile对象
 
 ```swift
 AMRequestAPI.share.post(url:String,body:Dictionary<String, Any>?)->Promise<JSON>
 ```
-####defaultParams属性
+#### defaultParams属性
 每次请求默认的参数
 
 ```swift
 AMRequestAPI.share.defaultParams = [:]
 ```
 
-###AMUploadFile对象
+### AMUploadFile对象
 
 withjpg:image的data  
 name:参数名
@@ -38,7 +38,7 @@ name:参数名
 ```swift
 AMUploadFile(withjpg: Data, name: String)
 ```
-###AMError对象
+### AMError对象
 catch捕获的错误，自定义错误时需要继承AMError
 
 
