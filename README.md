@@ -42,6 +42,7 @@ AMUploadFile(withjpg: Data, name: String)
 catch捕获的错误，自定义错误时需要继承AMError
 
 
+
 ## Author
 
 kumaw, atmwjf@hotmail.com
