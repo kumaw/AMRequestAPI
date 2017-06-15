@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AMRequestAPI (0.1.0):
+    - Alamofire (~> 4.0)
+    - PromiseKit/Alamofire (~> 4.0)
+    - SwiftyJSON
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Nimble (5.1.1)
+  - Nimble-Snapshots (4.4.0):
+    - Nimble-Snapshots/Core (= 4.4.0)
+  - Nimble-Snapshots/Core (4.4.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble
+    - Quick
+  - PromiseKit/Alamofire (4.2.2):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (4.2.2)
+  - Quick (1.0.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - AMRequestAPI (from `../`)
+  - FBSnapshotTestCase
+  - Nimble (~> 5.1.1)
+  - Nimble-Snapshots
+  - Quick (~> 1.0.0)
+
+EXTERNAL SOURCES:
+  AMRequestAPI:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AMRequestAPI: 2f9beed519149d6083385bef24fa2ce9adca1e74
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Nimble-Snapshots: e743439f26c2fa99d8f7e0d7c01c99bcb40aa6f2
+  PromiseKit: 00e8886881f151c7e573d06b437915b0bb2970ec
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 62c6e5f40327c3e6315f23b6b897888acc7b1cc3
+
+COCOAPODS: 1.2.0
